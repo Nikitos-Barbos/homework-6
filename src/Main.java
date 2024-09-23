@@ -41,14 +41,14 @@ public class Main {
         System.out.println("Задание 6");
 
         for (int i = 7; i <= 98; i = i + 7) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
         System.out.println();
         System.out.println("Задание 7");
 
         for (int i = 1; i <= 512; i = i * 2) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
         System.out.println();
@@ -58,41 +58,32 @@ public class Main {
         int months = 0;
         for (int i = 1; i <= 12; i++) {
             months = money + months;
-            System.out.println("Месяц " + i +  " сумма накоплений равна " + months + " рублей»");
+            System.out.println("Месяц " + i + " сумма накоплений равна " + months + " рублей»");
         }
 
         System.out.println();
         System.out.println("Задание 9");
         int cash = 29000;
         int period = 0;
-        for (int i = 1; i <= 12; i++){
-            period = period + period/100;
+        double percent = 1D / 100;
+        for (int i = 1; i <= 12; i++) {
             period = cash + period;
+            period = (int) (period * (1 + percent));
             System.out.println("Месяц " + i + " ,сумма накоплений равна " + period + " рублей");
         }
 
         System.out.println();
         System.out.println("Задание 10");
+        int number = 2;
+        int pop = 0;
+        for (int i = 1; i <= 10; i++) {
+            pop = number * i;
+            System.out.println(number + "*" + i + "=" + pop);
 
-
-
-
-
-
-
-
-        int salary = 65535;
-        int total = 0;
-        for (int i = 0; i < 12; i++) {
-            total = total + total/100;
-            total = total + salary;
-            System.out.println("Месяц " +  i + " Итого " + total);
 
         }
-        System.out.println(total);
-
-        }
-
 
 
     }
+
+}
